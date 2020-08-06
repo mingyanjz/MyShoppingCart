@@ -9,9 +9,12 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			/WEB-INF/onlineShop-servlet.xml
+			/WEB-INF/onlineShop-servlet.xml,
+			/WEB-INF/webflowConfig.xml
 		</param-value>
 	</context-param>
+
+
 
 	<!-- it is used to listen the contextloader -->
 	<listener>
@@ -19,4 +22,14 @@
 			org.springframework.web.context.ContextLoaderListener
 		</listener-class>
 	</listener>
+
+	<servlet>
+		<servlet-name>onlineShop</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>onlineShop</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
 </web-app>
