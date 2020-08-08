@@ -50,7 +50,7 @@
 				<c:forEach items="${products}" var="prod">
 					<tr>
 						<td style="width: 171px"><img
-							src="/products/${prod.id}.jpg"
+							src="/Users//mingyan/javarelated/products/${prod.id}.jpg"
 							style="width: 100px; height: 90px;"/></td>
 						<td>${prod.id}</td>
 						<td>${prod.productCategory}</td>

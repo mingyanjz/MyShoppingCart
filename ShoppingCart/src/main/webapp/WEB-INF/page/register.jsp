@@ -51,10 +51,10 @@
 								<form:errors path="user.emailId"></form:errors>
 							</div>
 							<div class="col-sm-6 form-group">
-								<form:label path="customerPhone">Phone Number</form:label>
+								<form:label path="customerPhoneNumber">Phone Number</form:label>
 								<form:input type="text" placeholder="Enter Phone Number"
-									class="form-control" path="customerPhone"></form:input>
-								<form:errors path="customerPhone"></form:errors>
+									class="form-control" path="customerPhoneNumber"></form:input>
+								<form:errors path="customerPhoneNumber"></form:errors>
 							</div>
 						</div>
 						<hr>
