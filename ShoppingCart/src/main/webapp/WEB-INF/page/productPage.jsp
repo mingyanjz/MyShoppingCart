@@ -24,7 +24,7 @@
 				<tbody>
 					<tr>
 						<td>Prodcut Image</td>
-						<td><img src="/Users//mingyan/javarelated/products/${product.id}.jpg"
+						<td><img src="<c:url value="/resource/images/products/${product.id}.jpg"/>"
 							width="30%" height="150px" alt="${product.productName}" /></td>
 					</tr>
 					<tr>
