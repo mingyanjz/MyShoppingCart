@@ -14,8 +14,9 @@ public class CartItemDao {
 	SessionFactory sessionFactory;
 	
 	public void addCartItem(CartItem cartItem) {
-		Session session = sessionFactory.openSession();
+		Session session = null;
 		try {
+			session = sessionFactory.openSession();
 			session.beginTransaction();
 			session.save(cartItem);
 			session.getTransaction().commit();
@@ -30,8 +31,9 @@ public class CartItemDao {
 	}
 	
 	public void deleteCartItemByCartItemId(int cartItemId) {
-		Session session = sessionFactory.openSession();
+		Session session = null;
 		try {
+			session = sessionFactory.openSession();
 			session.beginTransaction();
 			CartItem cartItem = (CartItem) session.get(CartItem.class, cartItemId);
 			//delete cartItem from cart's list
@@ -49,8 +51,9 @@ public class CartItemDao {
 	}
 	
 	public void updateCartItem(CartItem cartItem) {
-		Session session = sessionFactory.openSession();
+		Session session = null;
 		try {
+			session = sessionFactory.openSession();
 			session.beginTransaction();
 			session.saveOrUpdate(cartItem);
 			session.getTransaction().commit();

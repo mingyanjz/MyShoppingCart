@@ -14,13 +14,14 @@ import onlineShop.service.CustomerService;
 
 
 @Controller
+@RequestMapping(value = "/customer")
 public class RegistrationController {
 	
 	@Autowired
 	private CustomerService customerService;
 	
 	//return a registration Form
-	@RequestMapping(value = "/customer/registration", method = RequestMethod.GET)
+	@RequestMapping(value = "/registration", method = RequestMethod.GET)
 	public ModelAndView registrationForm() {
 		ModelAndView modelAndView = new ModelAndView();		
 		modelAndView.setViewName("register");
@@ -29,7 +30,7 @@ public class RegistrationController {
 		return modelAndView;
 	}
 	
-	@RequestMapping(value = "/customer/registration", method = RequestMethod.POST)
+	@RequestMapping(value = "/registration", method = RequestMethod.POST)
 	public ModelAndView register(@ModelAttribute(value = "customer") Customer customer, BindingResult result) {
 		ModelAndView modelAndView = new ModelAndView();		
 		//has error or used emailId

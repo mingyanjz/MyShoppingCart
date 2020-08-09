@@ -41,9 +41,9 @@
 									path="cart.customer.user.emailId"></form:input>
 							</div>
 							<div class="col-sm-6 form-group">
-								<label for="customerPhone">Phone Number</label>
+								<label for="customerPhoneNumber">Phone Number</label>
 								<form:input type="text" class="form-control"
-									path="cart.customer.customerPhone"></form:input>
+									path="cart.customer.customerPhoneNumber"></form:input>
 							</div>
 						</div>
 
