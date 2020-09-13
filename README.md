@@ -8,7 +8,7 @@ online shopping system
 ![alt text](login.png)
 
 ## Homepage
-![alt text](homepage.png)
+![alt text](home.png)
 
 ## Product List
 ![alt text](list.png)
@@ -17,7 +17,7 @@ online shopping system
 ![alt text](cart.png)
 
 ## View your billing information
-![alt text](list.png)
+![alt text](check.png)
 
 ## Submit your order
 ![alt text](submit.png)
