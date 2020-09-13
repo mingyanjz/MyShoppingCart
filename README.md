@@ -24,3 +24,6 @@ online shopping system
 
 ## Thank you
 ![alt text](submitted.png)
+
+## For manager (product management)
+![alt text](new.png)
